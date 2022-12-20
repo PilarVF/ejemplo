@@ -61,7 +61,7 @@ div:active, div:hover {
 #mov {
     animation-name: ff;
     animation-duration: 1.5s;
-    animation-iteration-count: 4;
+    animation-iteration-count: 6;
     animation-direction: alternate-reverse;
 }
 
