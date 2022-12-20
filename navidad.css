@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+img {   
+    top: 0%;
+    left: 0%; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: 60% 10%;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    z-index: 0;
+}
+
+div {
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    background-color: transparent;
+    z-index: 1;
+}
+
+p {
+    text-align: center;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    background-color: transparent;
+    color: rgb(210, 16, 16);
+    text-shadow: 1px 1px rgb(2, 112, 2);
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    z-index: 2;
+}
+
+div:active, div:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+#mov {
+    animation-name: ff;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes ff {
+    from {
+        margin-left: 6.8%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: -6.8%;
+        width: 100%;
+    }
+}
+
+@media all and (orientation:landscape){
+    img, div {
+        width: 70vh;
+        margin-left: calc(50vw - 35vh);
+    }
+}
