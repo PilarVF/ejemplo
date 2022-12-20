@@ -47,7 +47,7 @@ p {
     background-color: transparent;
     color: rgb(210, 16, 16);
     text-shadow: 1px 1px rgb(2, 112, 2);
-    font-size: 300%;
+    font-size: xx-large;
     font-weight: bold;
     font-style: italic;
     z-index: 2;
@@ -67,12 +67,12 @@ div:active, div:hover {
 
 @keyframes ff {
     from {
-        margin-left: 6.8%;
+        margin-left: 10%;
         width: 100%;
     }
 
     to {
-        margin-left: -6.8%;
+        margin-left: -10%;
         width: 100%;
     }
 }
