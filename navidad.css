@@ -42,8 +42,8 @@ div {
 
 p {
     text-align: center;
-    transition: all 2s ease;
-    -webkit-transition: all 2s ease;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
     background-color: transparent;
     color: rgb(210, 16, 16);
     text-shadow: 1px 1px rgb(2, 112, 2);
@@ -56,27 +56,6 @@ p {
 div:active, div:hover {
     opacity: 1;
     background-color: rgba(255, 255, 255, 0.12);
-}
-
-#mov {
-    animation-name: ff;
-    animation-duration: 1.5s;
-    animation-iteration-count: 6;
-    animation-direction: alternate-reverse;
-}
-
-@keyframes ff {
-    from {
-        margin-left: 10%;
-        width: 100%;
-        background-color: transparent;
-    }
-
-    to {
-        margin-left: -10%;
-        width: 100%;
-        background-color: transparent;
-    }
 }
 
 @media all and (orientation:landscape){
