@@ -40,6 +40,11 @@ div {
     z-index: 1;
 }
 
+div:active, div:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
 p {
     text-align: center;
     transition: all 1.5s ease;
@@ -51,11 +56,6 @@ p {
     font-weight: bold;
     font-style: italic;
     z-index: 2;
-}
-
-div:active, div:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.12);
 }
 
 @media all and (orientation:landscape){
